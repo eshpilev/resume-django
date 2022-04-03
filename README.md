@@ -1,3 +1,3 @@
 # resume-django
 
-My resume written on Django
+My resume developed on Django
