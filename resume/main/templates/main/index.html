@@ -40,10 +40,11 @@
 <header class="navbar-fixed-top">
   <nav>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">experience</a></li>
-      <li><a href="#projects">projects</a></li>
-      <li><a href="#contact">contact</a></li>
+      <li><a href="#about">Обо мне</a></li>
+      <li><a href="#experience">Опыт</a></li>
+      <li><a href="#skills">Навыки</a></li>
+      <li><a href="#education">Образование</a></li>
+      <li><a href="#contact">Контакты</a></li>
     </ul>
   </nav>
 </header>
@@ -54,8 +55,8 @@
   <div class="container">
     <div class="disply-table">
       <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
-        <h4>Ahmed Eissa</h4>
-        <h1>Ui &<br/> Ux Designer</h1></div>
+        <h4>Евгений Шпилёв</h4>
+        <h1>Enterprise<br>разработчик</h1></div>
     </div>
   </div>
 </div>
@@ -66,7 +67,7 @@
   <div class="container">
     <div class="col-md-6" data-aos="fade-up">
       <h4>01</h4>
-      <h1 class="size-50">Know <br/> About me</h1>
+      <h1 class="size-50">Коротко <br/> обо мне</h1>
       <div class="h-50"></div>
       <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically
         create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas
@@ -78,7 +79,6 @@
       <div class="h-50"></div>
     </div>
     <div class="col-md-6 about-img-div">
-      <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>
       <img src="{% static 'img/about-img.jpg' %}" width="400" class="img-responsive" alt="" align="right"
            data-aos="fade-right" data-aos-delay="0"/>
     </div>
@@ -91,7 +91,7 @@
   <div class="container">
     <div class="col-md-12">
       <h4>02</h4>
-      <h1 class="size-50">My <br/> Experience</h1>
+      <h1 class="size-50">Мой опыт</h1>
       <div class="h-50"></div>
     </div>
     <div class="col-md-12">
@@ -134,12 +134,12 @@
 </div>
 <!-- ./experience -->
 
-<!-- projects -->
-<div class="section" id="projects">
+<!-- skills -->
+<div class="section" id="skills">
   <div class="container">
     <div class="col-md-12">
       <h4>03</h4>
-      <h1 class="size-50">My <br/> Projects</h1>
+      <h1 class="size-50">Навыки</h1>
     </div>
     <!-- main container -->
     <div class="main-container portfolio-inner clearfix">
@@ -296,36 +296,27 @@
   <div class="container">
     <div class="col-md-12">
       <h4>04</h4>
-      <h1 class="size-50">Contact Me</h1>
+      <h1 class="size-50">Контакты</h1>
       <div class="h-50"></div>
     </div>
     <div class="col-md-4" data-aos="fade-up">
 
-      <h3>Phone Number</h3>
-      <p>+20 5555 569 42</p>
-      <h3> Mobile Numberr</h3>
-      <p>+20 5555 569 42</p>
+      <h3>Телефон</h3>
+      <p>+7 909 987 12 99</p>
       <h3>Email</h3>
-      <p>mail@info.me </p>
+      <p>e.a.shpilev@mail.ru</p>
+      <h3>Skipe</h3>
+      <p>eshpilev</p>
 
-      <h3>Social Network</h3>
-
-      <ul class="social">
-        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-        <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
-      </ul>
       <div class="clearfix"></div>
       <div class="h-50"></div>
     </div>
     <div class="col-md-8" data-aos="fade-up">
       <form class="contact-bg" id="contact-form" name="contact" method="post" novalidate="novalidate">
-        <input type="text" name="name" class="form-control" placeholder="Your Name"/>
-        <input type="email" name="email" class="form-control" placeholder="Your E-mail"/>
-        <input type="text" name="phone" class="form-control" placeholder="Phone Number"/>
-        <textarea name="message" class="form-control" placeholder="Your Message" style="height:120px"></textarea>
-        <button id="submit" type="submit" name="submit" class="btn btn-glance">Send</button>
+        <input type="text" name="name" class="form-control" placeholder="Ваше имя"/>
+        <input type="email" name="email" class="form-control" placeholder="Ваш E-mail"/>
+        <textarea name="message" class="form-control" placeholder="Ваше сообщение" style="height:120px"></textarea>
+        <button id="submit" type="submit" name="submit" class="btn btn-glance">Отправить</button>
         <div id="success">
           <p class="green textcenter"> Your message was sent successfully! I will be in touch as soon as I can. </p>
         </div>
@@ -338,37 +329,6 @@
 </div>
 <!-- ./contact -->
 
-<!--DEMO01-->
-<div id="animatedModal" class="popup-modal">
-  <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
-  <div id="btn-close-modal" class="close-animatedModal close-popup-modal"><i class="ion-close-round"></i></div>
-  <div class="clearfix"></div>
-  <div class="modal-content">
-    <div class="container">
-      <div class="portfolio-padding">
-        <div class="col-md-8 col-md-offset-2">
-          <h2>Geschäfts Eines<br/> Web-Studios</h2>
-          <div class="h-50"></div>
-          <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically
-            create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas
-            vis-a-vis.</p>
-          <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically
-            create seamless synergy rather than excellent value.</p>
-          <br/>
-          <br/> <img src="{% static 'img/portfolio/02.jpg' %}" alt="" class="img-responsive"/>
-          <br/>
-          <br/>
-          <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically
-            create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas
-            vis-a-vis.</p>
-          <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically
-            create seamless synergy rather than excellent value.</p>
-          <br/>
-          <br/></div>
-      </div>
-    </div>
-  </div>
-</div>
 <!-- jQuery -->
 <script src="{% static 'js/jquery.js' %}"></script>
 <!--  plugins  -->
