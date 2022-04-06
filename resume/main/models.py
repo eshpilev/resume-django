@@ -1,4 +1,5 @@
 from django.db import models
+import datetime
 
 
 class Candidate(models.Model):
@@ -17,16 +18,22 @@ class Candidate(models.Model):
 
 
 class Contact(models.Model):
-    type = models.CharField(max_length=50, verbose_name='Способ связи')
+
+    class TypeConnect(models.TextChoices):
+        PHONE = 'Телефон'
+        EMAIL = 'Почта'
+        SKYPE = 'Skype'
+
+    class Meta:
+        verbose_name = 'Контакт'
+        verbose_name_plural = 'Контакты'
+
+    type = models.CharField(max_length=50, verbose_name='Способ связи', choices=TypeConnect.choices)
     connect = models.CharField(max_length=50, verbose_name='Связь')
     candidate = models.ForeignKey(Candidate, on_delete=models.CASCADE, related_name='candidate_contact')
 
     def __str__(self):
         return self.type
-
-    class Meta:
-        verbose_name = 'Контакт'
-        verbose_name_plural = 'Контакты'
 
 
 class Experience(models.Model):
@@ -47,7 +54,7 @@ class Experience(models.Model):
 
 
 class Education(models.Model):
-    year_finish = models.IntegerField(verbose_name='Год окончания')
+    period = models.CharField(max_length=50, verbose_name='Период обучения')
     title = models.CharField(max_length=120, verbose_name='Учебное заведение')
     specialty = models.CharField(max_length=120, verbose_name='Специальность')
     candidate = models.ForeignKey(Candidate, on_delete=models.CASCADE, related_name='candidate_edu')
@@ -57,7 +64,7 @@ class Education(models.Model):
 
     class Meta:
         verbose_name = 'Образование'
-        ordering = ['-year_finish']
+        ordering = ['-period']
 
 
 class Certificate(models.Model):
@@ -85,7 +92,7 @@ class HardSkill(models.Model):
 
     class Meta:
         verbose_name_plural = 'Профессиональные навыки'
-        ordering = ['-level']
+        ordering = ['title']
 
 
 class SoftSkill(models.Model):

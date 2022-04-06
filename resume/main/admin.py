@@ -47,7 +47,7 @@ class ExperienceAdmin(admin.ModelAdmin):
 
 
 class EducationAdmin(admin.ModelAdmin):
-    list_display = ('year_finish', 'title', 'specialty')
+    list_display = ('period', 'title', 'specialty')
 
 
 class CertificateAdmin(admin.ModelAdmin):

@@ -132,3 +132,4 @@ dmypy.json
 /resume/static/
 /resume/media/
 /resume/main/migrations/
+/resume/django_cache/
