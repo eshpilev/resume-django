@@ -32,7 +32,6 @@ class Home(DetailView):
     template_name = 'main/index.html'
     context_object_name = 'candidate'
 
-
     def get_object(self, queryset=None):
         return get_object_or_404(Candidate, pk=settings.DEFAULT_CANDIDATE)
 
